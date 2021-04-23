@@ -68,10 +68,10 @@ const ContentfulPage = ({
       )}
       <div className="container container-small">
         <LongText content={content} prefix={prefix} />
-        <PublishDate date={date} />
-        {author && <Author prefix={prefix} name={author} />}
         {!!entries &&
           entries.map((entry) => <ComponentPicker key={entry.id} entry={entry} prefix={prefix} />)}
+        <PublishDate date={date} />
+        {author && <Author prefix={prefix} name={author} />}
       </div>
     </div>
   );

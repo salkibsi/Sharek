@@ -11,7 +11,7 @@ import { Embed, DynamicTrans } from '../utils';
 import { isExternalUrl } from '../lib';
 
 const About = ({ about, img }: { about: AuthorProps; img: GatsbyImageFluidProps }) => (
-  <div className="about d-flex justify-content-center pt-3 mt-3">
+  <div className="about d-flex justify-content-center mb-5">
     <Img {...img} alt={about.name} className="m-4 rounded-circle float-left" />
     <div className="d-flex flex-column justify-content-center align-items-end">
       <h5 className="pt-3">{about.name}</h5>
